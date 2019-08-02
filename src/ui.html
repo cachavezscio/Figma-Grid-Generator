@@ -1,0 +1,39 @@
+<section>
+  <h1 class="grid__header"><img src="<%= require('./grid.svg') %>"/>Grid Generator</h1>
+  <form role="Form Container">
+    <section class="grid__input--bound">
+      <label class="grid__body--small" for="rows">
+        <img src="<%= require('./row.svg') %>"/>ROWS
+      </label>
+      <input class="grid__textfield" id="rows" value="4">
+    </section>
+    <section class="grid__input--bound">
+      <label class="grid__body--small" for="cols">
+        <img src="<%= require('./col.svg') %>"/>COLUMNS
+      </label>
+      <input class="grid__textfield" id="cols" value="4">
+    </section>
+    <section class="grid__input--bound">
+      <label class="grid__body--small" for="width">
+        <img src="<%= require('./width.svg') %>"/>WIDTH
+      </label>
+      <input class="grid__textfield" id="width" value="100">
+    </section>
+    <section class="grid__input--bound">
+      <label class="grid__body--small" for="height">
+        <img src="<%= require('./height.svg') %>"/>HEIGHT
+      </label>
+      <input class="grid__textfield" id="height" value="100">
+    </section>
+    <section class="grid__input--bound">
+      <label class="grid__body--small" for="margin">
+        <img src="<%= require('./margin.svg') %>"/>INNER MARGIN
+      </label>
+      <input class="grid__textfield" id="margin" value="8">
+    </section>
+    <section class="grid__input--bound grid__input--bound__buttons">
+      <button class="grid__button grid__button--cancel" id="cancel">Cancel</button>
+      <button class="grid__button" id="create">Create</button>
+    </section>
+  </form>
+</section>

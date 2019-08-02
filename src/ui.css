@@ -1,0 +1,105 @@
+:root {
+  --black: #1D1E20;
+  --black-light: #282A2C;
+  --white: #fff;
+  --accent: #D0CF50;
+  --accent-light: #E3E366;
+  --accent-dark: #92910B;
+  --white-75: rgba(255,255,255, .75);
+}
+
+body {
+  font: 12px sans-serif;
+  background: var(--black);
+  font-size: 16px;
+  padding: 1rem;
+  margin: 0;
+}
+
+/*====== Typography ======*/
+
+.grid__header {
+  color: var(--accent);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.grid__header img {
+  margin-right: .5rem;
+}
+
+
+.grid__body--small {
+  color: var(--white-75);
+  font-size: .75rem;
+  line-height: 1.25rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.grid__body--small img {
+  margin-right: .5rem;
+}
+
+
+/*====== Components ======*/
+
+form {
+  border-radius: .25rem;
+  border: 1px solid #282A2C;
+  padding: .5rem;
+  margin: 0;
+}
+
+.grid__input--bound {
+  padding: .5rem 0;
+}
+
+.grid__textfield {
+  appearance: none;
+  background: #282A2C;
+  border: none;
+  margin-top: .25rem;
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  border: 1px solid var(--black-light); 
+  color: var(--white);
+  font-weight: bold;
+}
+
+.grid__input--bound__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid__button {
+  appearance: none;
+  width: calc((100% / 2) - .5rem);
+  background: var(--accent);
+  border: 1px solid var(--white-75);
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: all ease-in 100ms;
+}
+
+.grid__button--cancel {
+  background: transparent;
+  color: var(--white);
+}
+
+.grid__button:hover {
+  background-color: var(--accent-dark);
+}
+
+.grid__button--cancel:hover {
+  background: transparent;
+}
